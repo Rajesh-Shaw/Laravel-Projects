@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ServicesController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -30,3 +32,8 @@ Route::get('/post/{id}', function($id){
 Route::get('/dashboard', function(){
     return "Dashboard";
 })->name('dashboard');
+
+Route::get('services', [ServicesController::class, 'index']);
+Route::get('/product/{id}', function($id) {
+    return "Product ID: " . $id;
+})->where('id', '[0-9]+');
