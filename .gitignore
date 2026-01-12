@@ -1,0 +1,46 @@
+# Laravel / PHP
+/vendor
+.env
+.env.*
+.phpunit.result.cache
+
+# Node / Frontend
+/node_modules
+/npm-debug.log
+/yarn-error.log
+/pnpm-lock.yaml
+
+# Storage (keep structure, ignore files)
+/storage/*.key
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+!/storage/framework/.gitignore
+!/storage/framework/sessions/.gitignore
+!/storage/framework/views/.gitignore
+
+# Laravel Mix / Vite
+/public/hot
+/public/storage
+/public/build
+/mix-manifest.json
+
+# IDEs & Editors
+/.idea
+/.vscode
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+*.log
+
+# PHPUnit
+.phpunit.cache
+
+# Docker
+/docker-data
